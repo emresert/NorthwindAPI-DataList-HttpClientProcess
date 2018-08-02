@@ -1,0 +1,42 @@
+Product COMPONENT
+
+ <!--
+<table>
+ 
+    *ngFor şart sağlanana kadar tekrar et metodudur.
+    Burada veri listeleme bitene kadar tr nesnesi oluştur demektir.
+ 
+  <tr *ngFor='let product of products'>  her bir eleman için item imini belirledik 
+    
+    <td>{{product.productId}}</td>
+    <td>{{product.categoryId}}</td>
+    <td>{{product.productName}}</td>
+    <td>{{product.unitPrice}} </td>
+    <td>{{product.quantityPerUnit}}</td>
+    <td>{{product.unitsInStock}}</td>
+
+  </tr>
+</table>  -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let product of products'>
+        <th scope="row">1</th>
+        <td>{{product.productId}}</td>
+        <td>{{product.categoryId}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.unitPrice}} </td>
+        <td>{{product.quantityPerUnit}}</td>
+        <td>{{product.unitsInStock}}</td>
+      </tr>
+    </tbody>
+  </table>
+
