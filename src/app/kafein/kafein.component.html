@@ -9,10 +9,11 @@ Kafein COMPONENT burada çalışıyor
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let kaf of kafein'>
-        <th scope="row">1</th>
+      <tr *ngFor='let kaf of kafein;let i = index'>
+        <th scope="row">{{ i+1 }}</th>
         <td>{{kaf.name}}</td>
-        <td>{{kaf.adress}}</td>
+        <td>{{kaf.address}}</td>
+        <!--<td>{{kaf.address !="istanbul" ? kaf.address:'boş'}}</td>--> 
       </tr>
     </tbody>
   </table>
